@@ -8,7 +8,7 @@
 import edu.duke.*;
 import java.io.File;
 
-public class PerimeterAssignmentRunner {
+public class PerimeterRunner {
     public int getNumPoints (Shape s) {
         int numPoints = 0;
         for(Point p : s.getPoints()){
@@ -71,7 +71,7 @@ public class PerimeterAssignmentRunner {
         }
         return largestPerim;
     }
-
+//Largest [Perimeter]
     public String getFileWithLargestPerimeter() {
         // Put code here
         DirectoryResource dr = new DirectoryResource();
@@ -90,7 +90,7 @@ public class PerimeterAssignmentRunner {
 
         return largestFile.getName();
     }
-
+//To test the given perimeter and apply.
     public void testPerimeterMultipleFiles() {
         // Put code here
         double largest = getLargestPerimeterMultipleFiles();
@@ -143,8 +143,6 @@ public class PerimeterAssignmentRunner {
         testPerimeterMultipleFiles();
         testFileWithLargestPerimeter();
     }
-
-    // This method prints names of all files in a chosen folder that you can use to test your other methods
     public void printFileNames() {
         DirectoryResource dr = new DirectoryResource();
         for (File f : dr.selectedFiles()) {
